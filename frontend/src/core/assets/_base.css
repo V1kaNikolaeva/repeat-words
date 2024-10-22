@@ -1,0 +1,77 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+button:disabled {
+  background-color: black;
+  cursor: auto;
+}
+button {
+  padding: 14px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+input {
+  font-family: inherit;
+  background-color: transparent;
+  border: none;  
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  padding: 10px;
+  width: 160px;
+}
+input:focus {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; 
+}
+input[type=radio], input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+input[type=radio]:hover, input[type=checkbox]:hover {
+  cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:focus {
+    color: black;
+}
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba(26, 24, 47, 0.15);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 8px;
+  background: rgba(26, 24, 47, 0.15);
+  border-radius: 5px;
+}
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+}
+label {
+  font-size: 16px;
+}
+td {
+  font-size: 18px;
+}

@@ -1,0 +1,1052 @@
+[
+    {
+        "id": "1",
+        "word": "爱",
+        "pinyin": "ài",
+        "translate": "любить; любовь; любимый",
+        "example": "爱祖国 [ài zǔguó] — любить родину; 母爱 [mǔ’ài] — материнская любовь"
+    },
+    {
+        "id": "2",
+        "word": "八",
+        "pinyin": "bā",
+        "translate": "восемь; восьмой",
+        "example": ""
+    },
+    {
+        "id": "3",
+        "word": "爸爸",
+        "pinyin": "bàba",
+        "translate": "папа, тятя",
+        "example": ""
+    },
+    {
+        "id": "4",
+        "word": "杯子",
+        "pinyin": "bēizi",
+        "translate": "стакан; кружка; бокал; рюмка",
+        "example": ""
+    },
+    {
+        "id": "5",
+        "word": "北京",
+        "pinyin": "běijīng",
+        "translate": "Пекин",
+        "example": ""
+    },
+    {
+        "id": "6",
+        "word": "本",
+        "pinyin": "běn",
+        "translate": "счётное слово для растений, цветов",
+        "example": ""
+    },
+    {
+        "id": "7",
+        "word": "不客 气",
+        "pinyin": "bùkěqi",
+        "translate": "не церемоньтесь!; не стесняйтесь!",
+        "example": ""
+    },
+    {
+        "id": "8",
+        "word": "不",
+        "pinyin": "bù",
+        "translate": "отрицательная частица не",
+        "example": "我不去 [wǒ bùqù] — я не пойду [не поеду]"
+    },
+    {
+        "id": "9",
+        "word": "菜",
+        "pinyin": "cài",
+        "translate": "овощи; блюдо; пища; стол",
+        "example": "种菜 [zhòng cài] — сажать овощи; 中菜 [zhōngcài] — китайская кухня; китайские блюда"
+    },
+    {
+        "id": "10",
+        "word": "茶",
+        "pinyin": "chá",
+        "translate": "чай",
+        "example": "喝茶 [hē chá] — пить чай"
+    },
+    {
+        "id": "11",
+        "word": "吃",
+        "pinyin": "chī",
+        "translate": "есть, кушать",
+        "example": "吃水果 [chī shuǐguǒ] — кушать фрукты; 吃药 [chīyào] — принимать лекарства"
+    },
+    {
+        "id": "12",
+        "word": "出租 车",
+        "pinyin": "chūzūchē",
+        "translate": "такси",
+        "example": ""
+    },
+    {
+        "id": "13",
+        "word": "打电 话",
+        "pinyin": "dǎ diànhuà",
+        "translate": "звонить по телефону",
+        "example": ""
+    },
+    {
+        "id": "14",
+        "word": "大",
+        "pinyin": "dà",
+        "translate": "большой; крупный; великий; огромный",
+        "example": "大成市 [dà chéngshì] — большой [крупный] город 大事 [dàshì] — большое [важное] событие"
+    },
+    {
+        "id": "15",
+        "word": "的",
+        "pinyin": "de",
+        "translate": "суффикс прилагательного; суффикс притяжательности",
+        "example": "大的 [dàde] — большой; 父亲的话 [fùqīnde huà] — слова отца"
+    },
+    {
+        "id": "16",
+        "word": "点",
+        "pinyin": "diǎn",
+        "translate": "капля; немножко, чуточку; точка; запятая",
+        "example": "雨点 [yǔdiǎn] — капля дождя; 零点五 [líng diǎn wǔ] — 0,5 [ноль целых пять десятых]"
+    },
+    {
+        "id": "17",
+        "word": "电脑",
+        "pinyin": "diànnǎo",
+        "translate": "компьютер",
+        "example": "电脑软件 [diànnǎo ruǎnjiàn] — программные компоненты компьютера"
+    },
+    {
+        "id": "18",
+        "word": "电视",
+        "pinyin": "diànshì",
+        "translate": "телевидение; телевизионный",
+        "example": "电视连续剧 [diànshì liánxùjù] — телесериал; 电视片 [diànshìpiàn] — телефильм"
+    },
+    {
+        "id": "19",
+        "word": "电影",
+        "pinyin": "diànyǐng",
+        "translate": "кино",
+        "example": "电影片 [diànyǐngpiàn] — кинофильм"
+    },
+    {
+        "id": "20",
+        "word": "东西",
+        "pinyin": "dōngxi",
+        "translate": "вещь; предмет",
+        "example": ""
+    },
+    {
+        "id": "21",
+        "word": "都",
+        "pinyin": "dōu",
+        "translate": "все; всё",
+        "example": "他们都去 [tāmen dōu qù] — они все пойдут"
+    },
+    {
+        "id": "22",
+        "word": "读",
+        "pinyin": "dú",
+        "translate": "читать; зачитывать",
+        "example": "读报 [dúbào] — читать газеты; читка газет (вслух); 读大学 [dú dàxué] — учиться в университете"
+    },
+    {
+        "id": "23",
+        "word": "对不 起",
+        "pinyin": "duìbuqǐ",
+        "translate": "виноват!, простите!, извините!",
+        "example": ""
+    },
+    {
+        "id": "24",
+        "word": "多",
+        "pinyin": "duō",
+        "translate": "много; многочисленный; свыше",
+        "example": "事情很多 [shìqíng hěnduō] — дел очень много 一年多 [yīnián duō] — год с лишним; 多糟 ! [duō zāo] — до чего скверно!"
+    },
+    {
+        "id": "25",
+        "word": "多少",
+        "pinyin": "duōshao",
+        "translate": "сколько?",
+        "example": ""
+    },
+    {
+        "id": "26",
+        "word": "儿子",
+        "pinyin": "érzi",
+        "translate": "сын",
+        "example": ""
+    },
+    {
+        "id": "27",
+        "word": "二",
+        "pinyin": "èr",
+        "translate": "два; второй",
+        "example": "二路公共汽车 [èrlù gōnggòng qìchē] — автобус номер два; 二中 全会 [èrzhōngquánhuì] — второй пленум ЦК"
+    },
+    {
+        "id": "28",
+        "word": "饭馆",
+        "pinyin": "fànguǎn",
+        "translate": "ресторан; столовая",
+        "example": ""
+    },
+    {
+        "id": "29",
+        "word": "飞机",
+        "pinyin": "fēijī",
+        "translate": "самолёт",
+        "example": ""
+    },
+    {
+        "id": "30",
+        "word": "分钟",
+        "pinyin": "fēnzhōng",
+        "translate": "минута",
+        "example": ""
+    },
+    {
+        "id": "31",
+        "word": "高兴",
+        "pinyin": "gāoxìng",
+        "translate": "радоваться; радостный",
+        "example": ""
+    },
+    {
+        "id": "32",
+        "word": "个",
+        "pinyin": "gè",
+        "translate": "универсальное сч. сл.; отдельный; индивидуальный",
+        "example": "洗个澡 [xǐgè zǎo] — помыться"
+    },
+    {
+        "id": "33",
+        "word": "工作",
+        "pinyin": "gōngzuò",
+        "translate": "работать; работа",
+        "example": ""
+    },
+    {
+        "id": "34",
+        "word": "狗",
+        "pinyin": "gǒu",
+        "translate": "собака; собачий",
+        "example": "猎狗 [liègǒu] — охотничья собака; 狗吠 [gǒufèi] — собачий лай"
+    },
+    {
+        "id": "35",
+        "word": "汉语",
+        "pinyin": "hànyǔ",
+        "translate": "китайский язык",
+        "example": ""
+    },
+    {
+        "id": "36",
+        "word": "好",
+        "pinyin": "hǎo",
+        "translate": "хороший; хорошо; приятный; удобный",
+        "example": "一切都好 [yīqiè dōu hǎo] — всё хорошо; всё в порядке; 好听 [hǎotīng] — приятный для слуха"
+    },
+    {
+        "id": "37",
+        "word": "喝",
+        "pinyin": "hē",
+        "translate": "пить",
+        "example": "喝茶 [hē chá] — пить чай; 爱喝 [ài hē] — любить выпить"
+    },
+    {
+        "id": "38",
+        "word": "和",
+        "pinyin": "hé",
+        "translate": "мирный; союз и; предлог с",
+        "example": "和谈 [hétán] — мирные переговоры; 和大家一 起 [hé dàjiā yīqǐ] — вместе со всеми"
+    },
+    {
+        "id": "39",
+        "word": "很",
+        "pinyin": "hěn",
+        "translate": "очень; весьма",
+        "example": "很好 [hěnhǎo] — очень хорошо"
+    },
+    {
+        "id": "40",
+        "word": "后面",
+        "pinyin": "hòumiàn",
+        "translate": "задняя сторона; зад; позади, сзади; задний",
+        "example": ""
+    },
+    {
+        "id": "41",
+        "word": "回",
+        "pinyin": "huí",
+        "translate": "возвращаться",
+        "example": "回国 [huíguó] — вернуться на родину; 回 过头来 [huíguotóulai] — повернуть голову назад; обернуться"
+    },
+    {
+        "id": "42",
+        "word": "会",
+        "pinyin": "huì",
+        "translate": "уметь; мочь; владеть; собрание; заседание",
+        "example": "今天我们有个会 [jīntiān wǒmen yǒuge huì] — сегодня у нас собрание [заседание]; 我不会游泳 [wǒ bùhuì yóuyǒng] — я не умею плавать"
+    },
+    {
+        "id": "43",
+        "word": "火车 站",
+        "pinyin": "huǒchēzhàn",
+        "translate": "вокзал; железнодорожная станция",
+        "example": ""
+    },
+    {
+        "id": "44",
+        "word": "几",
+        "pinyin": "jǐ",
+        "translate": "сколько?; несколько; немного",
+        "example": "几个人 ? [jǐge rén] — сколько человек?"
+    },
+    {
+        "id": "45",
+        "word": "家",
+        "pinyin": "jiā",
+        "translate": "семья; семейство; дом; домашний",
+        "example": "我的家 [wǒdejiā] — моя семья 家事 [jiāshì] — домашние дела"
+    },
+    {
+        "id": "46",
+        "word": "叫",
+        "pinyin": "jiào",
+        "translate": "кричать; крик; звать; подзывать; вызывать",
+        "example": "鸡叫 [jījiào] — крик петуха 他叫什么名字 ? [tā jiào shénme míngzì] — как его зовут?, как его имя?"
+    },
+    {
+        "id": "47",
+        "word": "今天",
+        "pinyin": "jīntiān",
+        "translate": "сегодня; нынешний день",
+        "example": ""
+    },
+    {
+        "id": "48",
+        "word": "九",
+        "pinyin": "jiǔ",
+        "translate": "девять; девятый",
+        "example": ""
+    },
+    {
+        "id": "49",
+        "word": "开",
+        "pinyin": "kāi",
+        "translate": "открывать; управлять; вести; включать",
+        "example": "开门 [kāimén] — открыть дверь [ворота]; 开汽车 [kāi qìchē] — управлять автомобилем; вести машину"
+    },
+    {
+        "id": "50",
+        "word": "看",
+        "pinyin": "kàn",
+        "translate": "смотреть; читать (про себя); навестить",
+        "example": "看电影 [kàn diànyǐng] — смотреть кино [фильм]; 看朋友 [kàn péngyou] — навестить друга"
+    },
+    {
+        "id": "51",
+        "word": "看见",
+        "pinyin": "kànjiàn",
+        "translate": "увидеть; видеть",
+        "example": "看不见 [kànbujiàn] — нельзя рассмотреть; не видно"
+    },
+    {
+        "id": "52",
+        "word": "块",
+        "pinyin": "kuài",
+        "translate": "сч. сл. для основных денежных единиц; кусок; глыба",
+        "example": "一块卢布 [yī kuài lúbù] — один рубль"
+    },
+    {
+        "id": "53",
+        "word": "来",
+        "pinyin": "lái",
+        "translate": "приходить; прибывать; приезжать",
+        "example": "请他来 [qǐng tā lái] — попроси его прийти 来 了一个代表团 [láile yīge dàibiǎotuán] — прибыла [приехала] делегация"
+    },
+    {
+        "id": "54",
+        "word": "老师",
+        "pinyin": "lǎoshī",
+        "translate": "учитель; преподаватель",
+        "example": ""
+    },
+    {
+        "id": "55",
+        "word": "了",
+        "pinyin": "le",
+        "translate": "глагольный суффикс завершенности действия",
+        "example": "我写了信就来 [wǒ xiěle xìn jiù lái] — я напишу письмо и приду"
+    },
+    {
+        "id": "56",
+        "word": "冷",
+        "pinyin": "lěng",
+        "translate": "холодный; холодно; холод",
+        "example": "外面很冷 [wàimian hěn lěng] — на улице очень холодно"
+    },
+    {
+        "id": "57",
+        "word": "里",
+        "pinyin": "lǐ",
+        "translate": "внутри; в",
+        "example": "皮箱里 [píxiāngli] — в чемодане; 屋子里 [wūzili] — в комнате"
+    },
+    {
+        "id": "58",
+        "word": "零",
+        "pinyin": "líng",
+        "translate": "ноль; нолевой",
+        "example": "零下五度 [língxià wǔdù] — пять градусов ниже нуля; 零三号 [yī líng sān hào] — №103"
+    },
+    {
+        "id": "59",
+        "word": "六",
+        "pinyin": "liù",
+        "translate": "шесть; шестой",
+        "example": ""
+    },
+    {
+        "id": "60",
+        "word": "妈妈",
+        "pinyin": "māma",
+        "translate": "мама",
+        "example": ""
+    },
+    {
+        "id": "61",
+        "word": "吗",
+        "pinyin": "ma",
+        "translate": "фразовая частица, выражающая вопрос",
+        "example": "他来了吗 ? [tā láile ma] — он пришёл?; 这件事 吗 , 其实不能怪他 [zhèjiàn shì ma, qíshì bùnéng guài tā] — в этом-то он, по сути дела, и не виноват; в этом его, как раз, винить и нельзя"
+    },
+    {
+        "id": "62",
+        "word": "买",
+        "pinyin": "mǎi",
+        "translate": "покупать, приобретать",
+        "example": "买东西 [mǎidōngxi] — покупать вещи; делать покупки"
+    },
+    {
+        "id": "63",
+        "word": "猫",
+        "pinyin": "māo",
+        "translate": "кошка",
+        "example": ""
+    },
+    {
+        "id": "64",
+        "word": "没",
+        "pinyin": "méi",
+        "translate": "отрицательная частица",
+        "example": "他昨天没来过 [tā zuótiān méi láiguo] — он вчера не приходил"
+    },
+    {
+        "id": "65",
+        "word": "没关 系",
+        "pinyin": "méi guānxi",
+        "translate": "неважно; ничего; пустяки",
+        "example": ""
+    },
+    {
+        "id": "66",
+        "word": "米饭",
+        "pinyin": "mǐfàn",
+        "translate": "варёный рис",
+        "example": ""
+    },
+    {
+        "id": "67",
+        "word": "明天",
+        "pinyin": "míngtiān",
+        "translate": "завтра; завтрашний день",
+        "example": "明天见 ! [míngtiānjiàn] — до завтра!; завтра увидимся"
+    },
+    {
+        "id": "68",
+        "word": "名字",
+        "pinyin": "míngzi",
+        "translate": "имя (человека); кличка (животного)",
+        "example": ""
+    },
+    {
+        "id": "69",
+        "word": "哪",
+        "pinyin": "nǎ",
+        "translate": "какой; который",
+        "example": "你学的是哪一国语言 ? [nǐ xuéde shì nǎ yī guó yǔyán] — какой иностранный язык вы изучаете?"
+    },
+    {
+        "id": "70",
+        "word": "那",
+        "pinyin": "nà",
+        "translate": "тот; то; тогда, в таком случае",
+        "example": "那棵树 [nàkē shù] — то дерево; 那是他的东西 [nà shì tāde dōngxi] — то — его вещи"
+    },
+    {
+        "id": "71",
+        "word": "呢",
+        "pinyin": "ne",
+        "translate": "фразовая частица, выражающая вопрос же?",
+        "example": "你们看什么呢 ? [nǐmen kàn shénme ne] — что же вы смотрите?你呢 [nǐ ne] — а ты?"
+    },
+    {
+        "id": "72",
+        "word": "能",
+        "pinyin": "néng",
+        "translate": "способный; способность",
+        "example": "无能 [wúnéng] — неспособный; бесталанный"
+    },
+    {
+        "id": "73",
+        "word": "你",
+        "pinyin": "nǐ",
+        "translate": "ты; вы; твой; ваш",
+        "example": "他不认识你 [tā bù rènshi nǐ] — он не знает тебя [Вас]; он с тобой [с Вами] не знаком"
+    },
+    {
+        "id": "74",
+        "word": "年",
+        "pinyin": "nián",
+        "translate": "год; годы",
+        "example": "今年 [jīnnián] — текущий год; в текущем году; 近年来 [jìnnián lái] — (за) последние годы"
+    },
+    {
+        "id": "75",
+        "word": "女儿",
+        "pinyin": "nǚ’er",
+        "translate": "дочь",
+        "example": ""
+    },
+    {
+        "id": "76",
+        "word": "朋友",
+        "pinyin": "péngyou",
+        "translate": "друг, товарищ; друзья",
+        "example": ""
+    },
+    {
+        "id": "77",
+        "word": "漂亮",
+        "pinyin": "piàoliang",
+        "translate": "красивый",
+        "example": ""
+    },
+    {
+        "id": "78",
+        "word": "苹果",
+        "pinyin": "píngguǒ",
+        "translate": "яблоко",
+        "example": ""
+    },
+    {
+        "id": "79",
+        "word": "七",
+        "pinyin": "qī",
+        "translate": "семь; седьмой",
+        "example": ""
+    },
+    {
+        "id": "80",
+        "word": "钱",
+        "pinyin": "qián",
+        "translate": "деньги",
+        "example": "花钱 [huā qián] — тратить деньги; 有钱的 人 [yǒu qiánde rén] — богатый человек"
+    },
+    {
+        "id": "81",
+        "word": "前面",
+        "pinyin": "qiánmian",
+        "translate": "перед; передний; впереди; перёд; выше; ранее",
+        "example": "前面所说的 [qiánmiàn suǒshuōde] — вышесказанное"
+    },
+    {
+        "id": "82",
+        "word": "请",
+        "pinyin": "qǐng",
+        "translate": "просить; пожалуйста!; приглашать",
+        "example": "请坐 [qǐng zuò] — садитесь, пожалуйста; 请医生 [qǐng yīshēng] — пригласить врача"
+    },
+    {
+        "id": "83",
+        "word": "去",
+        "pinyin": "qù",
+        "translate": "уходить; отправляться; идти",
+        "example": "你上那儿去 ? [nǐ shàng nǎr qù] — Куда ты идёшь?; 他开会去了 [tā kāihuì qùle] — он пошёл на собрание"
+    },
+    {
+        "id": "84",
+        "word": "热",
+        "pinyin": "rè",
+        "translate": "горячий; увлечение; мода",
+        "example": "热茶 [rè chá] — горячий чай; 旅游热 [lǚyóurè] — туристский бум"
+    },
+    {
+        "id": "85",
+        "word": "人",
+        "pinyin": "rén",
+        "translate": "человек; люди",
+        "example": "年轻人 [niánqīngrén] — молодой человек; 自己 人 [zìjǐrén] — свой человек; свои люди"
+    },
+    {
+        "id": "86",
+        "word": "认识",
+        "pinyin": "rènshi",
+        "translate": "знать; быть знакомым; знакомиться",
+        "example": ""
+    },
+    {
+        "id": "87",
+        "word": "日",
+        "pinyin": "rì",
+        "translate": "солнце; солнечный; день; число, дата",
+        "example": "日出 [rìchū] — восход солнца; 日报 [rìbào] — ежедневная газета"
+    },
+    {
+        "id": "88",
+        "word": "三",
+        "pinyin": "sān",
+        "translate": "три; третий",
+        "example": "三个人 [sānge rén] — три человека"
+    },
+    {
+        "id": "89",
+        "word": "商店",
+        "pinyin": "shāngdiàn",
+        "translate": "магазин",
+        "example": ""
+    },
+    {
+        "id": "90",
+        "word": "上",
+        "pinyin": "shàng",
+        "translate": "верх; прошлый; на; в",
+        "example": "上衣 [shàngyī] — верхняя одежда; 上次 [shàngcì] — (в) прошлый раз"
+    },
+    {
+        "id": "91",
+        "word": "上午",
+        "pinyin": "shàngwǔ",
+        "translate": "до полудня",
+        "example": ""
+    },
+    {
+        "id": "92",
+        "word": "少",
+        "pinyin": "shǎo",
+        "translate": "мало; немного; редко",
+        "example": "我的行李很少 [wǒde xíngli hěn shǎo] — багажа у меня очень мало; 他很少迟到 [tā hěn shǎo chídào] — он очень редко опаздывает"
+    },
+    {
+        "id": "93",
+        "word": "谁",
+        "pinyin": "shuí, shéi",
+        "translate": "кто; кого; чей",
+        "example": "谁来了 ? [shuí láile] — кто пришёл?"
+    },
+    {
+        "id": "94",
+        "word": "什么",
+        "pinyin": "shénme",
+        "translate": "что?, что такое?; какой?; как?",
+        "example": ""
+    },
+    {
+        "id": "95",
+        "word": "十",
+        "pinyin": "shí",
+        "translate": "десять; десятый",
+        "example": "十个人 [shígerén] — десять человек"
+    },
+    {
+        "id": "96",
+        "word": "时候",
+        "pinyin": "shíhou",
+        "translate": "время, промежуток; времени; во время",
+        "example": ""
+    },
+    {
+        "id": "97",
+        "word": "是",
+        "pinyin": "shì",
+        "translate": "есть; быть; являться; да; правда",
+        "example": "我是工人 [wǒ shì gōngrén] — я рабочий; 他说得是 [tā shuōde shì] — он сказал правильно"
+    },
+    {
+        "id": "98",
+        "word": "书",
+        "pinyin": "shū",
+        "translate": "книга",
+        "example": "新书 [xīnshū] — новая книга"
+    },
+    {
+        "id": "99",
+        "word": "水",
+        "pinyin": "shuǐ",
+        "translate": "вода; водяной; гидро-",
+        "example": "喝水 [hē shuǐ] — пить воду; 开水 [kāishuǐ] — кипячёная вода; кипяток"
+    },
+    {
+        "id": "100",
+        "word": "水果",
+        "pinyin": "shuǐguǒ",
+        "translate": "фрукты; фруктовый",
+        "example": ""
+    },
+    {
+        "id": "101",
+        "word": "睡觉",
+        "pinyin": "shuìjiào",
+        "translate": "спать",
+        "example": ""
+    },
+    {
+        "id": "102",
+        "word": "说话",
+        "pinyin": "shuōhuà",
+        "translate": "говорить; разговаривать",
+        "example": ""
+    },
+    {
+        "id": "103",
+        "word": "四",
+        "pinyin": "sì",
+        "translate": "четыре; четвёртый",
+        "example": "四个人 [sìge rén] — четыре человека"
+    },
+    {
+        "id": "104",
+        "word": "岁",
+        "pinyin": "suì",
+        "translate": "годы; лета",
+        "example": "岁末 [suìmò] — конец года; 我三十岁 [wǒ sānshí suì] — мне тридцать лет"
+    },
+    {
+        "id": "105",
+        "word": "他",
+        "pinyin": "tā",
+        "translate": "он; его",
+        "example": "他是我的哥哥 [tā shì wǒde gēge] — он мой старший брат 他弟弟 [tā dìdi] — его младший брат"
+    },
+    {
+        "id": "106",
+        "word": "她",
+        "pinyin": "tā",
+        "translate": "она; её",
+        "example": ""
+    },
+    {
+        "id": "107",
+        "word": "太",
+        "pinyin": "tài",
+        "translate": "слишком, чересчур; чрезвычайно",
+        "example": "太晚 [tài wǎn] — слишком поздно"
+    },
+    {
+        "id": "108",
+        "word": "天气",
+        "pinyin": "tiānqì",
+        "translate": "погода; климат",
+        "example": "天气预报 [tiānqì yùbào] — прогноз погоды"
+    },
+    {
+        "id": "109",
+        "word": "听",
+        "pinyin": "tīng",
+        "translate": "слушать",
+        "example": "听报告 [tīng bàogào] — слушать доклад; 听音乐 [tīng yīnyuè] — слушать музыку"
+    },
+    {
+        "id": "110",
+        "word": "同学",
+        "pinyin": "tóngxué",
+        "translate": "соученик, однокашник",
+        "example": ""
+    },
+    {
+        "id": "111",
+        "word": "喂",
+        "pinyin": "wèi",
+        "translate": "кормить; алло!; эй!",
+        "example": "喂小孩 [wèi xiǎohái] — кормить ребёнка; 喂鸡 [wèi jī] — кормить кур"
+    },
+    {
+        "id": "112",
+        "word": "我",
+        "pinyin": "wǒ",
+        "translate": "я; мой; наш",
+        "example": ""
+    },
+    {
+        "id": "113",
+        "word": "我们",
+        "pinyin": "wǒmen",
+        "translate": "мы; наш",
+        "example": ""
+    },
+    {
+        "id": "114",
+        "word": "五",
+        "pinyin": "wǔ",
+        "translate": "пять; пятый",
+        "example": "五年级 [wǔ niánjí] — пятый курс [класс]"
+    },
+    {
+        "id": "115",
+        "word": "喜欢",
+        "pinyin": "xǐhuan",
+        "translate": "нравиться; любить",
+        "example": ""
+    },
+    {
+        "id": "116",
+        "word": "下",
+        "pinyin": "xià",
+        "translate": "нижний; низ; послелог под, при; следующий",
+        "example": "下嘴唇 [xià zuǐchún] — нижняя губа; 站在树下 [zhàn zài shù xià] — стоять под деревом 下月 [xiàyuè] — будущий месяц"
+    },
+    {
+        "id": "117",
+        "word": "下午",
+        "pinyin": "xiàwǔ",
+        "translate": "вторая половина дня, после полудня",
+        "example": ""
+    },
+    {
+        "id": "118",
+        "word": "下雨",
+        "pinyin": "xiàyǔ",
+        "translate": "идёт дождь; стоит дождливая погода",
+        "example": ""
+    },
+    {
+        "id": "119",
+        "word": "先生",
+        "pinyin": "xiānsheng",
+        "translate": "господин; мистер",
+        "example": ""
+    },
+    {
+        "id": "120",
+        "word": "现在",
+        "pinyin": "xiànzài",
+        "translate": "теперь; сейчас; ныне",
+        "example": ""
+    },
+    {
+        "id": "121",
+        "word": "想",
+        "pinyin": "xiǎng",
+        "translate": "думать; собираться; хотеть",
+        "example": "想办法 [xiǎng bànfǎ] — изыскивать [обдумывать] методы [способы]; 我也想试试 [wǒ yě xiǎng shìshì] — я тоже хочу попробовать"
+    },
+    {
+        "id": "122",
+        "word": "小",
+        "pinyin": "xiǎo",
+        "translate": "маленький; мелкий; малый; молодой; младший",
+        "example": "这间房间太小 [zhèjiān fángjiān tài xiǎo] — эта комната слишком маленькая; 他比我小一 岁 [tā bǐ wǒ xiǎo yīsuì] — он моложе меня на один год"
+    },
+    {
+        "id": "123",
+        "word": "小姐",
+        "pinyin": "xiǎojie",
+        "translate": "барышня; мисс",
+        "example": ""
+    },
+    {
+        "id": "124",
+        "word": "些",
+        "pinyin": "xiē",
+        "translate": "немного, несколько",
+        "example": "你快些走 [nǐ kuài xiē zǒu] — иди побыстрее; 这些 [zhèxie] — эти (несколько)"
+    },
+    {
+        "id": "125",
+        "word": "写",
+        "pinyin": "xiě",
+        "translate": "писать; записывать; описывать",
+        "example": "写信 [xiě xìn] — писать письмо; 写小说 [xiě xiǎoshuō] — писать рассказ"
+    },
+    {
+        "id": "126",
+        "word": "谢谢",
+        "pinyin": "xièxie",
+        "translate": "спасибо, благодарю; благодарить",
+        "example": ""
+    },
+    {
+        "id": "127",
+        "word": "星期",
+        "pinyin": "xīngqī",
+        "translate": "неделя",
+        "example": "今天星期几 ? [jìntiān xīngqījǐ] — какой сегодня день недели?"
+    },
+    {
+        "id": "128",
+        "word": "学生",
+        "pinyin": "xuésheng",
+        "translate": "студент; ученик; учащийся",
+        "example": "学生证 [xuéshēngzhèng] — студенческий билет"
+    },
+    {
+        "id": "129",
+        "word": "学习",
+        "pinyin": "xuéxí",
+        "translate": "учиться; обучаться; обучение, учёба",
+        "example": ""
+    },
+    {
+        "id": "130",
+        "word": "学校",
+        "pinyin": "xuéxiào",
+        "translate": "школа; учебное заведение; училище",
+        "example": ""
+    },
+    {
+        "id": "131",
+        "word": "一",
+        "pinyin": "yī",
+        "translate": "один; единица; первый",
+        "example": "一次 [yī cì] — один раз; 一年 [yī nián] — один год"
+    },
+    {
+        "id": "132",
+        "word": "衣服",
+        "pinyin": "yīfu",
+        "translate": "одежда; платье; костюм",
+        "example": ""
+    },
+    {
+        "id": "133",
+        "word": "医生",
+        "pinyin": "yīsheng",
+        "translate": "врач, доктор",
+        "example": ""
+    },
+    {
+        "id": "134",
+        "word": "医院",
+        "pinyin": "yīyuàn",
+        "translate": "больница; госпиталь",
+        "example": ""
+    },
+    {
+        "id": "135",
+        "word": "椅子",
+        "pinyin": "yǐzi",
+        "translate": "стул",
+        "example": ""
+    },
+    {
+        "id": "136",
+        "word": "有",
+        "pinyin": "yǒu",
+        "translate": "иметь(ся); иметь в наличии; обладать; есть",
+        "example": "我没有工夫 [wǒ méiyǒu gōngfu] — у меня нет свободного времени; 有 这种可能 [yǒu zhèzhǒng kěnéng] — имеется [есть] такая возможность"
+    },
+    {
+        "id": "137",
+        "word": "月",
+        "pinyin": "yuè",
+        "translate": "луна; месяц",
+        "example": "上月 [shàng yuè] — прошлый месяц; 月票 [yuèpiào] — месячный (проездной) билет"
+    },
+    {
+        "id": "138",
+        "word": "在",
+        "pinyin": "zài",
+        "translate": "быть в живых; существовать; находиться; в; на",
+        "example": "他的祖父还在 [tāde zǔfù hái zài] — его дед ещё жив; 书在桌子上 [shū zài zhuōzi shang] — книга (находится) на столе; 他们在礼堂开会 [tāmen zài lǐtáng kāihuì] — они проводят собрание в актовом зале"
+    },
+    {
+        "id": "139",
+        "word": "再见",
+        "pinyin": "zàijiàn",
+        "translate": "до свидания",
+        "example": ""
+    },
+    {
+        "id": "140",
+        "word": "怎么",
+        "pinyin": "zěnme",
+        "translate": "как?, каким образом?",
+        "example": ""
+    },
+    {
+        "id": "141",
+        "word": "怎么 样",
+        "pinyin": "zěnmeyàng",
+        "translate": "как, каким образом; каков",
+        "example": ""
+    },
+    {
+        "id": "142",
+        "word": "这",
+        "pinyin": "zhè",
+        "translate": "это, этот",
+        "example": "这是谁 ? [zhè shì shuí] — кто это? 这小孩 [zhè xiǎohái] — этот ребёнок"
+    },
+    {
+        "id": "143",
+        "word": "中国",
+        "pinyin": "zhōngguó",
+        "translate": "Китай; китайский",
+        "example": "中国话 [zhōngguóhuà] — китайский язык"
+    },
+    {
+        "id": "144",
+        "word": "中午",
+        "pinyin": "zhōngwǔ",
+        "translate": "полдень",
+        "example": ""
+    },
+    {
+        "id": "145",
+        "word": "住",
+        "pinyin": "zhù",
+        "translate": "жить, проживать",
+        "example": "我家住在城外 [wǒ jiā zhù zài chéng wài] — моя семья живёт за городом; 记住 [jìzhù] — запомнить; 站住 ! [zhànzhù] — стой! (команда)"
+    },
+    {
+        "id": "146",
+        "word": "桌子",
+        "pinyin": "zhuōzi",
+        "translate": "стол",
+        "example": "书桌 [shūzhuō] — письменный стол"
+    },
+    {
+        "id": "147",
+        "word": "字",
+        "pinyin": "zì",
+        "translate": "иероглиф; слово",
+        "example": "汉字 [hànzì] — китайские иероглифы; 常用字 [chángyòngzì] — наиболее употребительные иероглифы"
+    },
+    {
+        "id": "148",
+        "word": "昨天",
+        "pinyin": "zuótiān",
+        "translate": "вчера; вчерашний день",
+        "example": ""
+    },
+    {
+        "id": "149",
+        "word": "坐",
+        "pinyin": "zuò",
+        "translate": "сидеть; садиться; ехать на [в]",
+        "example": "请坐 ! [qǐng zuò] — садитесь, пожалуйста! 坐火车 [zuò huǒchē] — ехать на поезде"
+    },
+    {
+        "id": "150",
+        "word": "做",
+        "pinyin": "zuò",
+        "translate": "делать; изготавливать; быть [работать] кем-либо; писать",
+        "example": "你在做什么 ? [nǐ zài zuò shénme] — что ты делаешь? 做教员 [zuò jiàoyuán] — работать преподавателем"
+    }
+]

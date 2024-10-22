@@ -1,0 +1,15 @@
+:root {
+    /* FONT SIZE */
+    --small: 14px;
+    --medium: 16px;
+    --large: 18px;
+
+    /* COLORS */
+    --light-green: #c0da7c;
+    --white: #ffffff;
+    --black: #000000;
+    --light-red: #ec6969;
+
+    --bg-gray: #8b8b8b;
+    --icons: #cecece;
+}
