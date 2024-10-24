@@ -1,6 +1,10 @@
 <template>
     <div class="list__container">
-        <UiButton @click="show = !show" :bType="bTypes.dropDown">{{ props.buttonText }}</UiButton>
+        <UiButton @click="show = !show" :bType="bTypes.dropDown">
+            <template #text>
+                {{ props.buttonText }}
+            </template>
+        </UiButton>
         <div class="wrapper__ul">
             <ul class="ul-dropdown" v-if="show">
                 <slot name="list" />

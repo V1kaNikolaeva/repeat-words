@@ -12,5 +12,5 @@ export interface List {
     id?: number,
     name: string,
     priority: Priorities,
-    words?: Word | [],
+    words?: Word[],
 }

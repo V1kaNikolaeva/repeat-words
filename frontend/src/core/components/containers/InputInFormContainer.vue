@@ -1,6 +1,6 @@
 <template>
     <div class="input-in-form">
-
+        <slot/>
     </div>
 </template>
 
@@ -10,7 +10,7 @@
 
 <style scoped>
 .input-in-form {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 </style>

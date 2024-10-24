@@ -6,22 +6,33 @@
             'to': props.bType === 'to',
             'list-item': props.bType === 'listItem',
             'border': props.bType === 'border',
+            'exit': props.bType === 'exit',
+            'select': props.bType === 'select',
         }"
     >
-        <slot/>
+    <div v-if="$slots['text']">
+        <slot name="text"/>
+    </div>
+    <div v-if="$slots['right-icon']">
+        <slot name="right-icon"/>
+    </div>
     </button>
 </template>
 
 <script setup lang="ts">
 import type { bTypes } from '@/types/enums';
+import { computed } from 'vue';
 
 
 interface Props {
     bType?: bTypes,
+    borderRadiusPosition?: boolean,
 }
 
 const props = defineProps<Props>()
-
+const borderPosition = computed(() => {
+    return props.borderRadiusPosition ? '10px 10px 0px 0px' : '10px 10px 10px 10px'
+})
 </script>
 
 <style scoped>
@@ -40,6 +51,15 @@ const props = defineProps<Props>()
     border: 1px solid black;
 }
 .list-item {
-    background-color: aliceblue;
+    background-color: var(--light-blue);
+}
+.exit {
+    width: auto;
+    background-color: transparent;
+}
+.select {
+  width: 130px;
+  border: 1px solid black;
+  border-radius: v-bind(borderPosition);
 }
 </style>

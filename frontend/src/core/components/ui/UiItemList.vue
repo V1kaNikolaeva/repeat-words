@@ -6,7 +6,9 @@
             <UiButton 
                 :bType="bTypes.listItem"
             >
-                {{ props.word.word }}
+                <template #text>
+                    {{ props.word.word }}
+                </template>
             </UiButton>
         </li>
 </template>
@@ -20,18 +22,18 @@ import { bTypes } from '@/types/enums';
 
 interface Props {
     word: Word,
-    currentLastWord: Word | null,
+    currentWord: Word | null,
 }
 const props = defineProps<Props>()
-const emit = defineEmits(['update:currentLastWord'])
+const emit = defineEmits(['update:currentWord'])
 const changeAdvice = (value: Word | null) => {
-    emit('update:currentLastWord', value)
+    emit('update:currentWord', value)
 }
 </script>
 
 <style scoped>
 .item-list {
-    margin-bottom: 4px;
+    margin: 4px;
 }
 .item-list:last-child {
     margin-bottom: 0;

@@ -2,7 +2,7 @@
   <div class="wrapper-head">
     <DropDown :list="settingsStore.lastWords" buttonText="Последние" listKey="word">
       <template #list>
-        <UiItemList v-for="(word, index) in settingsStore.lastWords" :key="index" v-model:currentLastWord="currentLastWord" :word="word" @click="changePosition(word)"/>
+        <UiItemList v-for="(word, index) in settingsStore.lastWords" :key="index" v-model:currentWord="currentLastWord" :word="word" @click="changePosition(word)"/>
       </template>
       <template v-if="currentLastWord" #advice>
         <div class="advice">
@@ -12,7 +12,11 @@
         </div>
       </template>
     </DropDown>
-    <UiButton @click="accident" @keyup.ctrl="accident" type="random" :bType="bTypes.border">Случайное</UiButton>
+    <UiButton @click="accident" @keyup.ctrl="accident" type="random" :bType="bTypes.border">
+      <template #text>
+        Случайное
+      </template>
+    </UiButton>
     <SearchInput
         :inputType="searchResult.length ? 'borders' : ''"
         type="text"
@@ -21,9 +25,17 @@
         name=""
         id=""
       >
-        <div v-if="searchResult.length">
-          <SearchItem v-for="(word, index) in searchResult" :searchWord="word" :key="index" />
+      <template v-if="searchResult.length" #search>
+          <UiItemList v-for="(word, index) in searchResult" v-model:currentWord="currentSearchWord" :word="word" :key="index" @click="changePosition(word)"/>
+      </template>
+      <template v-if="currentSearchWord && searchResult.length" #advice>
+        <div class="advice">
+          <p>
+            {{ currentSearchWord?.translate }}
+          </p>
         </div>
+      </template>
+        
     </SearchInput>
 
       <UiInput :inputType="''" type="number" placeholder="Позиция" v-model:modelValue="newPosition" name="" id="" />
@@ -37,9 +49,8 @@ import UiInput from '@/core/components/ui/UiInput.vue';
 import { usePositionStore } from '@/store/position';
 import { useWordsStore } from '@/store/words';
 import { computed, onBeforeUnmount, onMounted, ref, watchEffect, type Ref } from 'vue'
-import SearchInput from '../components/SearchInput.vue';
+import SearchInput from '../../../core/components/base/SearchInput.vue';
 import type { Word } from '@/types/interfaces';
-import SearchItem from '../components/SearchItem.vue';
 import DropDown from '@/core/components/base/DropDown.vue';
 import { useSettingsStore } from '@/store/settings';
 import UiItemList from '@/core/components/ui/UiItemList.vue';
@@ -61,8 +72,9 @@ const changePosition = (word: Word) => {
 }
 
 // Если наводим на последнее слово
-const currentLastWord: Ref<Word | null> = ref(null)
-
+const currentLastWord: Ref<Word | null> = ref(null);
+// Если наводим на слово которое выдал поиск
+const currentSearchWord: Ref<Word | null> = ref(null); 
 // const closeSearch = () => {
 //   search.value = ''
 // }
@@ -122,7 +134,7 @@ const userCtrl = (event: KeyboardEvent) => {
 }
 
 const accident = () => {
-  const random = Math.round(0 + Math.random() * (wordsStore.data.length - 0))
+  const random = Math.round(0 + Math.random() * (wordsStore.data.length - 1))
   positionStore.setPosition(random)
 }
 </script>
@@ -132,6 +144,7 @@ const accident = () => {
     background-color: #fff;
     padding: 10px;
     border-radius: 10px;
+    margin-top: 10px;
     height: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }

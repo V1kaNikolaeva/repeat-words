@@ -3,20 +3,35 @@
     <div class="toggle-container">
       <div>
         <UiButton :bType="bTypes.to" @click="back" :disabled="positionStore.position === 0">
-          назад
+          <template #text>
+            назад
+          </template>
         </UiButton>
       </div>
       <div class="pages">
-        <p><UiButton @click="first">1...</UiButton></p>
+        <p><UiButton @click="first">
+          <template #text>
+            1...
+          </template>
+        </UiButton></p>
         <p>{{ positionStore.position + 1 }}/{{ wordsStore.data.length }}</p>
-        <p><UiButton @click="last" :text="``" type="to">{{ `...${wordsStore.data.length}` }}</UiButton></p>
+        <p><UiButton @click="last" :text="``" type="to">
+          <template #text>
+            {{ `...${wordsStore.data.length}` }}
+          </template>
+        </UiButton>
+        </p>
       </div>
       <div>
         <UiButton
           :bType="bTypes.to"
           @click="forward"
           :disabled="positionStore.position >= wordsStore.data.length - 1"
-        >вперед</UiButton>
+        >
+        <template #text>
+          вперед
+        </template>
+      </UiButton>
       </div>
     </div>
   </div>
