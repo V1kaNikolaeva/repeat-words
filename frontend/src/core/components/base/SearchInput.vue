@@ -41,6 +41,7 @@ const onInput = (event: Event) => {
     position: absolute;
     width: 220px;
     z-index: 5;
+
 }
 .wrapper-input {
     width: 220px;
@@ -59,5 +60,13 @@ const onInput = (event: Event) => {
     border-color: rgba(26, 24, 47, 0.15);
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+}
+.advice {
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 </style>

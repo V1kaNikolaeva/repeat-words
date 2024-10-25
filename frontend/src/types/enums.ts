@@ -12,8 +12,11 @@ export enum bTypes {
     to = 'to',
     listItem = 'listItem',
     border = 'border',
+    create = 'create',
     exit = 'exit',
     select = 'select',
+
+    withColor = 'withColor'
 }
 export enum Visibility {
     hidden = 'hidden',

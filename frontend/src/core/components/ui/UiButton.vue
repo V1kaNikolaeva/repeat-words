@@ -8,6 +8,7 @@
             'border': props.bType === 'border',
             'exit': props.bType === 'exit',
             'select': props.bType === 'select',
+            'withColor': props.bType === 'withColor',
         }"
     >
     <div v-if="$slots['text']">
@@ -27,15 +28,20 @@ import { computed } from 'vue';
 interface Props {
     bType?: bTypes,
     borderRadiusPosition?: boolean,
+    bgColor?: string,
 }
 
 const props = defineProps<Props>()
 const borderPosition = computed(() => {
     return props.borderRadiusPosition ? '10px 10px 0px 0px' : '10px 10px 10px 10px'
 })
+const bgC = computed(() => {
+    return props.bgColor ? props.bgColor : `--white`
+})
 </script>
 
 <style scoped>
+
 .to {
     background-color: var(--light-green);
 }
@@ -61,5 +67,8 @@ const borderPosition = computed(() => {
   width: 130px;
   border: 1px solid black;
   border-radius: v-bind(borderPosition);
+}
+.withColor {
+    background-color: v-bind(bgC);
 }
 </style>

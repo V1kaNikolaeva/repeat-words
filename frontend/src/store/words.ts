@@ -9,7 +9,8 @@ import data4 from '../../chinese/hsk4.json'
 import data5 from '../../chinese/hsk5.json'
 import data6 from '../../chinese/hsk6.json'
 
-
+// либо отправить запрос на бек с выбранным уровнем, отсортировать и вернуть
+// либо сортировать тут
 export const useWordsStore = defineStore('words', () => {
     const settingsStore = useSettingsStore()
     const hsk1: Word[] = data1
