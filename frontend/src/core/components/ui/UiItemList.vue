@@ -36,6 +36,6 @@ const changeAdvice = (value: Word | null) => {
     margin: 4px;
 }
 .item-list:last-child {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 </style>

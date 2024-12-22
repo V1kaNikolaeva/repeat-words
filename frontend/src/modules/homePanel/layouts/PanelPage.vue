@@ -12,7 +12,10 @@
         </div>
       </template>
     </DropDown>
-    <UiButton @click="accident" @keyup.ctrl="accident" type="random" :bType="bTypes.border">
+    <UiButton @click="accident" @keyup.ctrl="accident" type="random">
+      <template #left-icon>
+        <IconStar/>
+      </template>
       <template #text>
         Случайное
       </template>
@@ -55,6 +58,8 @@ import DropDown from '@/core/components/base/DropDown.vue';
 import { useSettingsStore } from '@/store/settings';
 import UiItemList from '@/core/components/ui/UiItemList.vue';
 import { bTypes } from '@/types/enums';
+import IconStar from '../../../core/components/icons/IconStar.vue';
+
 
 const wordsStore = useWordsStore()
 const positionStore = usePositionStore()

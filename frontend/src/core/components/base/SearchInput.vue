@@ -35,7 +35,8 @@ const onInput = (event: Event) => {
 <style scoped>
 .search-input {
     max-width: 160px;
-    width: 100%;
+    /* width: 100%; */
+    margin-bottom: 4px;
 }
 .top-in {
     position: absolute;
@@ -48,11 +49,11 @@ const onInput = (event: Event) => {
 }
 .results-wrapper {
     display: grid;
-    
+    border-radius: 10px;
     overflow-y: auto;
     grid-template-columns: 50% 50%;
     max-height: 160px;
-    background-color: var(--white);    
+    background-color: #dadada;    
     height: 100%;
 }
 

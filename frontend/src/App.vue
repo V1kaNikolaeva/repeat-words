@@ -5,7 +5,7 @@
     <div class="wrapper">
       <nav>
         <LinkContainer>
-          <UiLink v-for="link in appLinks" :key="link.id" :pathName="link.name" :text="link.text" />
+          <UiLink v-for="link in appLinks" :underline="underlines.header" :key="link.id" :pathName="link.name" :text="link.text" />
         </LinkContainer>
       </nav>
     </div>
@@ -25,6 +25,8 @@ import { usePositionStore } from './store/position';
 import { useSettingsStore } from './store/settings';
 import { useWordsStore } from './store/words';
 import { useThemeStore } from './store/theme';
+import { underlines } from '@/types/enums';
+
 
 onMounted(() => {
   const positionStore = usePositionStore()
@@ -49,14 +51,16 @@ onMounted(() => {
 }
 .head {
   width: 100%;
-  padding-top: 20px;
   max-width: 1600px;
+  height: 68px;
   margin: 0 auto;
 }
 .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 .header-link {
   margin-right: 30px;

@@ -18,6 +18,10 @@ export enum bTypes {
 
     withColor = 'withColor'
 }
+export enum underlines {
+    base = 'base',
+    header = 'header'
+}
 export enum Visibility {
     hidden = 'hidden',
     visible = 'visible',

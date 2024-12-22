@@ -1,6 +1,10 @@
 <template>
     <div class="list__container">
-        <UiButton @click="show = !show" :bType="bTypes.dropDown">
+        <UiButton @click="show = !show">
+            <template #left-icon>
+                <IconDown v-show="show"/>
+                <IconUp v-show="!show"/>
+            </template>
             <template #text>
                 {{ props.buttonText }}
             </template>
@@ -18,6 +22,10 @@
 <script setup lang="ts">
 import { shallowRef, type Ref } from 'vue';
 import UiButton from '../ui/UiButton.vue';
+import IconUp from '../icons/IconUp.vue';
+import IconDown from '../icons/IconDown.vue';
+
+
 import { bTypes } from '@/types/enums';
 
 interface Props {

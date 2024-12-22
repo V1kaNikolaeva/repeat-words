@@ -11,11 +11,14 @@
             'withColor': props.bType === 'withColor',
         }"
     >
-    <div v-if="$slots['text']">
-        <slot name="text"/>
-    </div>
-    <div v-if="$slots['right-icon']">
-        <slot name="right-icon"/>
+    <div :class="{'button-content-container' : $slots['left-icon']}">
+
+        <div v-if="$slots['left-icon']">
+            <slot name="left-icon"/>
+        </div>
+        <div v-if="$slots['text']">
+            <slot name="text"/>
+        </div>
     </div>
     </button>
 </template>
@@ -57,7 +60,7 @@ const bgC = computed(() => {
     border: 1px solid black;
 }
 .list-item {
-    background-color: var(--light-blue);
+    background-color: var(--white);
 }
 .exit {
     width: auto;
@@ -70,5 +73,11 @@ const bgC = computed(() => {
 }
 .withColor {
     background-color: v-bind(bgC);
+}
+.button-content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 </style>

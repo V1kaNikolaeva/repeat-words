@@ -26,6 +26,11 @@ export const appLinks = [
     },
     {
         id: 6,
+        name: 'profile',
+        text: 'Профиль',
+    },
+    {
+        id: 7,
         name: 'exercises',
         text: 'Упражнения',
     },
