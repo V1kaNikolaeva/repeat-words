@@ -9,12 +9,19 @@
             'exit': props.bType === 'exit',
             'select': props.bType === 'select',
             'withColor': props.bType === 'withColor',
+            'inputToText': props.bType === 'inputToText',
         }"
     >
-    <div :class="{'button-content-container' : $slots['left-icon']}">
+    <div :class="{'button-content-container' : $slots['left-icon'], 'inputAndtext': $slots['input'] && $slots['text'] && $slots['line']}">
+        <div v-if="$slots['input']">
+            <slot name="input"/>
 
+        </div>
         <div v-if="$slots['left-icon']">
             <slot name="left-icon"/>
+        </div>
+        <div v-if="$slots['line']">
+            <slot name="line"/>
         </div>
         <div v-if="$slots['text']">
             <slot name="text"/>
@@ -46,7 +53,6 @@ const bgC = computed(() => {
 <style scoped>
 
 .to {
-    background-color: var(--light-green);
 }
 .default {
     max-width: 220px;
@@ -79,5 +85,15 @@ const bgC = computed(() => {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+}
+.inputToText {
+    height: auto;
+    width: 152px;
+}
+.inputAndtext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 </style>

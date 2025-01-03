@@ -41,23 +41,21 @@
         
     </SearchInput>
 
-      <UiInput :inputType="''" type="number" placeholder="Позиция" v-model:modelValue="newPosition" name="" id="" />
+      <!-- <UiInput :inputType="''" type="number" placeholder="Позиция" v-model:modelValue="newPosition" name="" id="" /> -->
 
     </div>
 </template>
 
 <script setup lang="ts">
 import UiButton from '@/core/components/ui/UiButton.vue';
-import UiInput from '@/core/components/ui/UiInput.vue';
 import { usePositionStore } from '@/store/position';
 import { useWordsStore } from '@/store/words';
-import { computed, onBeforeUnmount, onMounted, ref, watchEffect, type Ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, type Ref } from 'vue'
 import SearchInput from '../../../core/components/base/SearchInput.vue';
 import type { Word } from '@/types/interfaces';
 import DropDown from '@/core/components/base/DropDown.vue';
 import { useSettingsStore } from '@/store/settings';
 import UiItemList from '@/core/components/ui/UiItemList.vue';
-import { bTypes } from '@/types/enums';
 import IconStar from '../../../core/components/icons/IconStar.vue';
 
 
@@ -91,18 +89,7 @@ const data = wordsStore.data
 
 //Поиск
 const search: Ref<string> = ref('')
-//Позиция
-const newPosition: Ref<number | undefined> = ref()
 
-watchEffect(() => {
-  if (
-    newPosition.value !== undefined &&
-    newPosition.value <= data.length &&
-    newPosition.value > 0
-  ) {
-    positionStore.setPosition(newPosition.value - 1)
-  }
-})
 
 const searchResult = computed(() => {
   const searchList: Word[] = []
@@ -125,15 +112,15 @@ const searchResult = computed(() => {
 
 
 onMounted(() => {
-    document.addEventListener('keyup', userCtrl, true);
+    document.addEventListener('keyup', useShift, true);
 })
 
 onBeforeUnmount(() => {
-    document.removeEventListener('keyup', userCtrl, true);
+    document.removeEventListener('keyup', useShift, true);
 })
 
-const userCtrl = (event: KeyboardEvent) => {
-  if (event.key === 'Control') {
+const useShift = (event: KeyboardEvent) => {
+  if (event.key === 'Shift') {
     accident()
   }
 }
@@ -145,12 +132,23 @@ const accident = () => {
 </script>
 
 <style scoped>
-.advice {
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-    height: auto;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+.wrapper-head {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  background-color: var(--bg-second);
+  padding: 20px;
+  border-radius: 20px;
 }
+.advice {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  height: auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 </style>

@@ -26,7 +26,6 @@ import IconUp from '../icons/IconUp.vue';
 import IconDown from '../icons/IconDown.vue';
 
 
-import { bTypes } from '@/types/enums';
 
 interface Props {
     buttonText: string,
@@ -43,6 +42,11 @@ const show: Ref<boolean> = shallowRef(false)
     display: flex;
     flex-direction: column;
     position: relative;
+}
+.ul-dropdown {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: var(--white);
 }
 .wrapper__ul {
     position: absolute;

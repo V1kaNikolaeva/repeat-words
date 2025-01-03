@@ -1,11 +1,8 @@
 <template>
-    <MainContainer>
-        <WordItem type="one" :word="word" />
-    </MainContainer>
+    <WordItem type="one" :word="word" />
 </template>
 
 <script setup lang="ts">
-import MainContainer from '@/core/components/containers/MainContainer.vue';
 import { usePositionStore } from '@/store/position';
 import { useSettingsStore } from '@/store/settings';
 import { useWordsStore } from '@/store/words';

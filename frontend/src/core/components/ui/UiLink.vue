@@ -3,7 +3,8 @@
         <RouterLink 
             :activeClass="underline === 'base' ? 'active-link' : underline === 'header' ? 'header' : ''"
             :class="{'hsk-link' : underline === 'base', 'header-link' : underline === 'header'}" 
-            :to="{ name: props.pathName }">{{ props.text }}
+            :to="{ name: props.pathName }">
+            {{ props.text }}
         </RouterLink>
     </div>
 </template>
@@ -34,10 +35,11 @@ const props = defineProps<Props>()
 }
 
 .header {
-    background-color: #e5e5e5;
+    color: var(--active-link);
     border-radius: 10px;
 }
 .header-link {
     padding: 12px;
+    font-weight: bold;
 }
 </style>

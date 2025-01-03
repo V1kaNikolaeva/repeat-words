@@ -15,8 +15,8 @@ export enum bTypes {
     create = 'create',
     exit = 'exit',
     select = 'select',
-
-    withColor = 'withColor'
+    inputToText = 'inputToText',
+    withColor = 'withColor',
 }
 export enum underlines {
     base = 'base',

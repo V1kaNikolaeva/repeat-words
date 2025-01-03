@@ -60,7 +60,7 @@
 <script setup lang="ts">
 import SearchInput from '@/core/components/base/SearchInput.vue';
 import InputInFormContainer from '@/core/components/containers/InputInFormContainer.vue';
-import { list } from '@/core/components/services/listServise';
+import { list } from '@/core/services/listServise';
 import UiButton from '@/core/components/ui/UiButton.vue';
 import UiInput from '@/core/components/ui/UiInput.vue';
 import UiItemList from '@/core/components/ui/UiItemList.vue';

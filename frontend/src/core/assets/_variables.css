@@ -4,7 +4,7 @@
     --medium: 16px;
     --large: 18px;
 
-    /* COLORS */
+    /* COLORS WHITE THEME */
     --light-green: #c0da7c;
     --white: #ffffff;
     --black: #000000;
@@ -12,6 +12,9 @@
     --light-blue: #e8f8ff;
     --gray-hover: #dadada;
 
-    --bg-gray: #8b8b8b;
+    --bg-nav-green: #7cacaf;
+    --bg-second: #d2e8e7;
+    --active-link: #ffffff;
+    
     --icons: #cecece;
 }

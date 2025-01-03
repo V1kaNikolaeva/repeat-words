@@ -5,13 +5,16 @@
 </template>
 
 <script setup lang="ts">
-
+interface Props {
+    direction: string,
+}
+const props = defineProps<Props>()
 </script>
 
 <style scoped>
 .hsk-links-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: v-bind(direction);
     gap: 20px;
 }
 </style>

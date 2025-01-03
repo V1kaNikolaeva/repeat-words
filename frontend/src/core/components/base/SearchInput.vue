@@ -3,7 +3,7 @@
         <input class="search-input" :class="{ 'borderRadiusBottom' : inputType === 'borders' }" v-bind="$attrs" @input="onInput">
         <!-- Результат поиска -->
          <div class="top-in">
-             <div class="results-wrapper">
+             <div v-if="props.modelValue" class="results-wrapper">
                  <slot name="search"/>
              </div>
              <slot name="advice"/>
@@ -49,11 +49,14 @@ const onInput = (event: Event) => {
 }
 .results-wrapper {
     display: grid;
-    border-radius: 10px;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     overflow-y: auto;
     grid-template-columns: 50% 50%;
     max-height: 160px;
-    background-color: #dadada;    
+    background-color: var(--white);    
+    border: 1px solid black;
     height: 100%;
 }
 

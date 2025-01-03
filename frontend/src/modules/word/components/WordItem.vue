@@ -69,10 +69,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
   }
   .word-item {
-    font-size: 22px;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 38px;
   }
   
   td {
