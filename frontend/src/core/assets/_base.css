@@ -7,6 +7,11 @@ body {
   font-style: normal;
   font-size: 16px;
   box-sizing: border-box;
+  background-color: var(--body-bg-color);
+}
+p {
+  color: var(--font-color-base);
+
 }
 button:disabled {
   background-color: black;
@@ -25,7 +30,7 @@ input {
   font-family: inherit;
   background-color: transparent;
   border: none;  
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--font-color-base);
   font-size: 16px;
   padding: 10px;
   width: 160px;
@@ -47,10 +52,10 @@ input[type=radio]:hover, input[type=checkbox]:hover {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: var(--font-color-base);
 }
 a:focus {
-    color: black;
+    
 }
 body::-webkit-scrollbar {
   background-color: rgba(22, 193, 17, 0.15);
@@ -62,7 +67,11 @@ body::-webkit-scrollbar-thumb {
   background: rgba(58, 55, 90, 0.15);
   border-radius: 5px;
 }
+label {
+  color: var(--font-color-base);
+}
 li {
+  color: var(--font-color-base);
   list-style: none;
 }
 ul {
@@ -76,4 +85,10 @@ td {
 }
 ul {
   margin: 0;
+}
+button {
+  color: var(--font-color-base);
+}
+input {
+  color: var(--font-color-base);
 }

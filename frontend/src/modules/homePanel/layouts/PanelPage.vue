@@ -1,35 +1,40 @@
 <template>
   <div class="wrapper-head">
-    <DropDown :list="settingsStore.lastWords" buttonText="Последние" listKey="word">
-      <template #list>
-        <UiItemList v-for="(word, index) in settingsStore.lastWords" :key="index" v-model:currentWord="currentLastWord" :word="word" @click="changePosition(word)"/>
-      </template>
-      <template v-if="currentLastWord" #advice>
-        <div class="advice">
-          <p>
-            {{ currentLastWord?.translate }}
-          </p>
-        </div>
-      </template>
-    </DropDown>
-    <UiButton @click="accident" @keyup.ctrl="accident" type="random">
-      <template #left-icon>
-        <IconStar/>
-      </template>
-      <template #text>
-        Случайное
-      </template>
-    </UiButton>
-    <SearchInput
-        :inputType="searchResult.length ? 'borders' : ''"
-        type="text"
-        placeholder="Поиск"
-        v-model:modelValue="search"
-        name=""
-        id=""
+    <div class="left-panel">
+
+      <DropDown :list="settingsStore.lastWords" buttonText="Последние" listKey="word">
+        <template #list>
+          <UiItemList v-for="(word, index) in settingsStore.lastWords" :key="index" v-model:currentWord="currentLastWord" :word="word" @click="changePosition(word)"/>
+        </template>
+        <template v-if="currentLastWord" #advice>
+          <div class="advice">
+            <p>
+              {{ currentLastWord?.translate }}
+            </p>
+          </div>
+        </template>
+      </DropDown>
+      <UiButton @click="accident" @keyup.ctrl="accident" type="random">
+        <template #left-icon>
+          <IconStar/>
+        </template>
+        <template #text>
+          Случайное
+        </template>
+      </UiButton>
+    </div>
+    <div class="right-panel">
+
+      <SearchInput
+      :inputType="searchResult.length ? 'borders' : ''"
+      type="text"
+      placeholder="Поиск"
+      v-model:modelValue="search"
+      name=""
+      id=""
       >
       <template v-if="searchResult.length" #search>
-          <UiItemList v-for="(word, index) in searchResult" v-model:currentWord="currentSearchWord" :word="word" :key="index" @click="changePosition(word)"/>
+        <UiItemList v-for="(word, index) in searchResult" v-model:currentWord="currentSearchWord" :word="word" :key="index" @click="changePosition(word)"/>
       </template>
       <template v-if="currentSearchWord && searchResult.length" #advice>
         <div class="advice">
@@ -38,8 +43,9 @@
           </p>
         </div>
       </template>
-        
+      
     </SearchInput>
+  </div>
 
       <!-- <UiInput :inputType="''" type="number" placeholder="Позиция" v-model:modelValue="newPosition" name="" id="" /> -->
 
@@ -132,13 +138,18 @@ const accident = () => {
 </script>
 
 <style scoped>
-
+.left-panel {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 .wrapper-head {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 40px;
-  background-color: var(--bg-second);
+  background-color: var(--main-blocks-color);
   padding: 20px;
   border-radius: 20px;
 }

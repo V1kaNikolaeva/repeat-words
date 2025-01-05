@@ -9,11 +9,9 @@
 
 <style>
 .main-container {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: calc(100vh - 30px);
-    margin-left: 40px;
-    margin-top: 10px;
+    height: 100%; */
 }
 </style>

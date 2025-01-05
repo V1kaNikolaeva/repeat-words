@@ -2,8 +2,8 @@
     <div class="list__container">
         <UiButton @click="show = !show">
             <template #left-icon>
-                <IconDown v-show="show"/>
-                <IconUp v-show="!show"/>
+                <IconDown v-show="!show"/>
+                <IconUp v-show="show"/>
             </template>
             <template #text>
                 {{ props.buttonText }}
@@ -44,9 +44,9 @@ const show: Ref<boolean> = shallowRef(false)
     position: relative;
 }
 .ul-dropdown {
-    border: 1px solid black;
     border-radius: 20px;
-    background-color: var(--white);
+    padding: 2px;
+    background-color: var(--search-bg);
 }
 .wrapper__ul {
     position: absolute;

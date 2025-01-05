@@ -1,7 +1,13 @@
 <template>
-    <div class="link-container">
+    <div class="link-container"
+        :class="{ 'link-container-icons': $slots['icon'] }"
+    >
+
+        <div v-if="$slots['icon']">
+            <slot name="icon"/>
+        </div>
         <RouterLink 
-            :activeClass="underline === 'base' ? 'active-link' : underline === 'header' ? 'header' : ''"
+            :activeClass="'active-link'"
             :class="{'hsk-link' : underline === 'base', 'header-link' : underline === 'header'}" 
             :to="{ name: props.pathName }">
             {{ props.text }}
@@ -31,15 +37,18 @@ const props = defineProps<Props>()
 }
 
 .active-link {
-    border-bottom: 1px solid rgb(0, 0, 0);
+    color: var(--font-color-active);
 }
 
 .header {
-    color: var(--active-link);
     border-radius: 10px;
 }
 .header-link {
     padding: 12px;
     font-weight: bold;
+}
+.link-container-icons {
+    display: flex;
+    align-items: center;
 }
 </style>

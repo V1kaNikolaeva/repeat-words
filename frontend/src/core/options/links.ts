@@ -3,31 +3,35 @@ export const appLinks = [
         id: 1,
         name: 'settings',
         text: 'Настройки',
+        src: '../src/core/assets/icons/navigation/settings.svg',
     },
     {
         id: 2,
         name: 'words',
         text: 'Слова',
+        src: '../src/core/assets/icons/navigation/notes.svg',
+
     },
     {
         id: 3,
-        name: 'hsk',
-        text: 'HSK',
+        name: 'list',
+        text: 'Списки',
+        src: '../src/core/assets/icons/navigation/folders.svg',
+
     },
     {
         id: 4,
-        name: 'list',
-        text: 'Списки',
+        name: 'test',
+        text: 'Тесты',
+        src: '../src/core/assets/icons/navigation/listCheck.svg',
+
     },
     {
         id: 5,
-        name: 'test',
-        text: 'Тесты',
-    },
-    {
-        id: 6,
         name: 'exercises',
         text: 'Упражнения',
+        src: '../src/core/assets/icons/navigation/book.svg',
+
     },
 ];
 

@@ -1,8 +1,10 @@
 <template>
     <div class="container">
     <div class="toggle-container">
-      <div>
-        <UiButton :bType="bTypes.to" @click="back" :disabled="positionStore.position === 0">
+      <div
+        :class="{ 'hide-button': hideBackButton }"
+      >
+        <UiButton :bType="bTypes.to" @click="back">
           <template #left-icon>
             <IconArrowLeft/>
           </template>
@@ -41,11 +43,12 @@
         </UiButton>
         </p>
       </div>
-      <div>
+      <div
+        :class="{ 'hide-button': hideForwardButton }"
+      >
         <UiButton
           :bType="bTypes.to"
           @click="forward"
-          :disabled="positionStore.position >= wordsStore.data.length - 1"
         >
         <template #left-icon>
           <IconArrowRight/>
@@ -64,7 +67,7 @@ import UiInput from '@/core/components/ui/UiInput.vue';
 import { usePositionStore } from '@/store/position';
 import { useWordsStore } from '@/store/words';
 import { bTypes } from '@/types/enums';
-import { onBeforeUnmount, onMounted, type Ref, ref, watchEffect } from 'vue';
+import { computed, onBeforeUnmount, onMounted, type Ref, ref, watchEffect } from 'vue';
 
 
 const positionStore = usePositionStore()
@@ -118,6 +121,13 @@ const useEnter = (event: KeyboardEvent) => {
 
   }
 }
+const hideBackButton = computed(() => {
+  return positionStore.position === 0
+})
+
+const hideForwardButton = computed(() => {
+  return positionStore.position >= wordsStore.data.length - 1
+})
 
 </script>
 
@@ -127,12 +137,9 @@ const useEnter = (event: KeyboardEvent) => {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  max-width: 1400px;
-  margin: 0 auto;
-  width: 100%;
 }
 .container {
-  background-color: var(--bg-second);
+  background-color: var(--main-blocks-color);
   border-radius: 20px;
 }
 .pages {
@@ -144,5 +151,8 @@ const useEnter = (event: KeyboardEvent) => {
 }
 .pPos {
   width: 60px;
+}
+.hide-button {
+  visibility: hidden;
 }
 </style>

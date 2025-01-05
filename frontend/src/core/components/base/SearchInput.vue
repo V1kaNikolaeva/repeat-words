@@ -54,9 +54,8 @@ const onInput = (event: Event) => {
     border-bottom-right-radius: 0px;
     overflow-y: auto;
     grid-template-columns: 50% 50%;
-    max-height: 160px;
-    background-color: var(--white);    
-    border: 1px solid black;
+    max-height: 190px;
+    background-color: var(--search-bg);    
     height: 100%;
 }
 

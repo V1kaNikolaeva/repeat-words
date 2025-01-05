@@ -5,16 +5,14 @@
     --large: 18px;
 
     /* COLORS WHITE THEME */
-    --light-green: #c0da7c;
-    --white: #ffffff;
-    --black: #000000;
-    --light-red: #ec6969;
-    --light-blue: #e8f8ff;
-    --gray-hover: #dadada;
+    --font-color-base: #e2e2e2;
+    --font-color-active: #c5ff9b;
+    --font-color-focus: #ccefb4;
 
-    --bg-nav-green: #7cacaf;
-    --bg-second: #d2e8e7;
-    --active-link: #ffffff;
-    
-    --icons: #cecece;
+    --body-bg-color: #121212;
+    --main-blocks-color: #313131;
+    --nav-blocks-color: #262626;
+
+    --scrollbar-color: #222222 #121212;
+
 }
