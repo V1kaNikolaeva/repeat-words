@@ -65,10 +65,11 @@
   
   <style scoped>
   .word {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     align-items: center;
     justify-content: center;
+    grid-template-rows: repeat(3, 110px);
+    /* grid-template-columns: repeat(1, 310px); */
   }
   .word-item {
     margin-top: 0;

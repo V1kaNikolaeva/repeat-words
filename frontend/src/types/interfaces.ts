@@ -1,21 +1,21 @@
 import type { Priorities } from "./enums";
 
 export interface Word {
-    id: number,
-    word: string,
-    pinyin: string,
-    translate: string,
-    example: string,
+    readonly id: number,
+    readonly word: string,
+    readonly pinyin: string,
+    readonly translate: string,
+    readonly example: string,
 }
 
 export interface List {
-    id: number,
+    readonly id: number,
     name: string,
     priority: Priorities,
     words: Word[],
 }
 
 export interface Folder {
-    id: number,
+    readonly id: number,
     name: string,
 }

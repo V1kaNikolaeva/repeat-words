@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { hskLevel } from '@/core/options/hsk';
+import { readyMadeLists } from '@/core/options/hsk';
 import { usePositionStore } from '@/store/position';
 import { useSettingsStore } from '@/store/settings';
 import { useWordsStore } from '@/store/words';
@@ -23,10 +23,12 @@ import UiRadioInput from '@/core/components/ui/UiRadioInput.vue';
 const settingsStore = useSettingsStore()
 const wordsStore = useWordsStore()
 const positionStore = usePositionStore()
-const localLevels: Ref<Radio[]> = ref([...hskLevel])
+const localLevels: Ref<Radio[]> = ref([...readyMadeLists])
 
 const level: Ref<number> = ref(settingsStore._level)
 
+
+// HUITA
 watch(level, () => {
     console.log('level changed')
     // устанавливаем новый выбранный уровень

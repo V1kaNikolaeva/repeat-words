@@ -1,9 +1,15 @@
 <template>
-    <div class="wrapper-input">
-        <input class="search-input" :class="{ 'borderRadiusBottom' : inputType === 'borders' }" v-bind="$attrs" @input="onInput">
+    <div class="wrapper-input" v-on-click-outside="close">
+        <input 
+            class="search-input" 
+            :class="{ 'borderRadiusBottom' : inputType === 'borders' }" 
+            v-bind="$attrs" 
+            @focus="show = true" 
+            @input="onInput"
+        >
         <!-- Результат поиска -->
          <div class="top-in">
-             <div v-if="props.modelValue" class="results-wrapper">
+             <div v-if="props.modelValue && show" class="results-wrapper">
                  <slot name="search"/>
              </div>
              <slot name="advice"/>
@@ -12,7 +18,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, shallowRef, type Ref } from 'vue';
+import { vOnClickOutside } from '@vueuse/components'
 
 
 interface Props {
@@ -25,11 +32,19 @@ const props = defineProps<Props>()
 const emit = defineEmits(['update:modelValue']);
 
 const modelValue = ref(props.modelValue);
+
+const show: Ref<boolean> = shallowRef(false)
+const close = () => {
+    show.value = false
+}     
 const onInput = (event: Event) => {
   const target = event.target as HTMLInputElement;
   modelValue.value = target.value;
+  show.value = true
   emit('update:modelValue', target.value);
 };
+
+
 </script>
 
 <style scoped>
@@ -53,23 +68,18 @@ const onInput = (event: Event) => {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     overflow-y: auto;
+    scrollbar-color: var(--scrollbar-color);
+    scrollbar-width: thin;
     grid-template-columns: 50% 50%;
     max-height: 190px;
-    background-color: var(--search-bg);    
+    background-color: var(--nav-blocks-color);    
     height: 100%;
 }
 
-.borderRadiusBottom {
+/* .borderRadiusBottom {
     border-color: rgba(26, 24, 47, 0.15);
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-}
-.advice {
-    background-color: var(--white);
-    padding: 10px;
-    border-radius: 10px;
-    height: auto;
-    margin-top: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+} */
+
 </style>

@@ -2,13 +2,13 @@
   <div class="wrapper-head">
     <div class="left-panel">
 
-      <DropDown :list="settingsStore.lastWords" buttonText="Последние" listKey="word">
+      <DropDown  :list="settingsStore.lastWords" buttonText="Последние" listKey="word">
         <template #list>
           <UiItemList v-for="(word, index) in settingsStore.lastWords" :key="index" v-model:currentWord="currentLastWord" :word="word" @click="changePosition(word)"/>
         </template>
         <template v-if="currentLastWord" #advice>
           <div class="advice">
-            <p>
+            <p class="advice-p-panel-page">
               {{ currentLastWord?.translate }}
             </p>
           </div>
@@ -38,7 +38,7 @@
       </template>
       <template v-if="currentSearchWord && searchResult.length" #advice>
         <div class="advice">
-          <p>
+          <p class="advice-p-panel-page">
             {{ currentSearchWord?.translate }}
           </p>
         </div>
@@ -103,11 +103,12 @@ const searchResult = computed(() => {
   if (search.value !== '') {
     for (let i = 0; i < data.length; i++) {
       if (
-        data[i].word.toLowerCase().includes(search.value.toLowerCase()) ||
+        data[i].word.replace(/\s/g, '').toLowerCase().includes(search.value.replace(/\s/g, '').toLowerCase()) ||
         data[i].translate.toLowerCase().includes(search.value.toLowerCase())
       ) {
         searchList.push(data[i])
         if (searchList.length >= 100) {
+          console.log(0)
           return searchList
         }
       }
@@ -154,12 +155,15 @@ const accident = () => {
   border-radius: 20px;
 }
 .advice {
-  background-color: #fff;
+  background-color: var(--nav-blocks-color);
   padding: 10px;
   border-radius: 10px;
   margin-top: 10px;
   height: auto;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.advice-p-panel-page {
+  word-wrap: break-word;
 }
 
 </style>

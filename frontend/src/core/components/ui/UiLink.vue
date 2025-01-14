@@ -29,7 +29,6 @@ const props = defineProps<Props>()
 <style scoped>
 .link-container {
 
-    padding: 10px;
 }
 
 .hsk-link {

@@ -51,7 +51,6 @@ import { useThemeStore } from './store/theme';
 import { underlines } from '@/types/enums';
 import IconSettings from './core/components/icons/navigation/IconSettings.vue';
 import { useRouter } from 'vue-router';
-import router from './router';
 import IconNotes from './core/components/icons/navigation/IconNotes.vue';
 import IconFolders from './core/components/icons/navigation/IconFolders.vue';
 import IconCheck from './core/components/icons/navigation/IconCheck.vue';
@@ -69,10 +68,10 @@ onMounted(() => {
   wordsStore.setNewData()
   themeStore.init()
 
-  const router = useRouter()
   
 })
 
+const router = useRouter()
 const currentPath = computed(() => {
   return String(router.currentRoute.value.name).split('.')[0] 
 })
@@ -138,7 +137,7 @@ const currentPath = computed(() => {
   margin: 20px;
 }
 .head-nav {
-  margin: 20px;
+  margin: 10px;
 
 }
 .picture {

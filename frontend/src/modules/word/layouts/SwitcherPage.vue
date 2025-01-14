@@ -21,7 +21,7 @@
         
         <UiButton :bType="bTypes.inputToText" @click="changeInputNewPosition">
           <template #input>
-            <UiInput v-if="inputNewPosition" :inputType="'pos'" type="number" v-model:modelValue="newPosition" name="" id="" />
+            <UiInput v-if="inputNewPosition" ref="posInput" v-on-click-outside="close" :inputType="'pos'" type="number" v-model:modelValue="newPosition" name="" id="" />
             <p class="pPos" v-else-if="!inputNewPosition">{{ positionStore.position + 1 }}</p>
           </template>
 
@@ -68,6 +68,7 @@ import { usePositionStore } from '@/store/position';
 import { useWordsStore } from '@/store/words';
 import { bTypes } from '@/types/enums';
 import { computed, onBeforeUnmount, onMounted, type Ref, ref, watchEffect } from 'vue';
+import { vOnClickOutside } from '@vueuse/components'
 
 
 const positionStore = usePositionStore()
@@ -105,8 +106,12 @@ watchEffect(() => {
 const inputNewPosition: Ref<boolean> = ref(false)
 
 const changeInputNewPosition = () => {
-    inputNewPosition.value = true
+  inputNewPosition.value = true
 }
+const close = () => {
+  inputNewPosition.value = false
+}
+
 onMounted(() => {
     document.addEventListener('keyup', useEnter, true);
 })

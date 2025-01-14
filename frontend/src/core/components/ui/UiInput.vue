@@ -34,7 +34,7 @@ const onInput = (event: Event) => {
 .pos {
     width: 38px;
     margin: 0;
-    border: 1px solid black;
+    border: 1px solid var(--font-color-base);
     border-radius: 10px;
     text-align: center;
 }

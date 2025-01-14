@@ -56,7 +56,7 @@ export const useSettingsStore = defineStore('settings', () => {
         if (lastWords.value.find(item => newWord.word === item.word)) {
             return
         }
-        if (lastWords.value.length >= 5) {
+        if (lastWords.value.length >= 20) {
             lastWords.value.pop()
         }
         lastWords.value.unshift(newWord)
