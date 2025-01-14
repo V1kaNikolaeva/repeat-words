@@ -71,9 +71,10 @@
     grid-template-rows: repeat(3, 110px);
     /* grid-template-columns: repeat(1, 310px); */
   }
+
   .word-item {
+    font-family: 'FZKai-Z03';
     margin-top: 0;
-    font-weight: bold;
     font-size: 38px;
   }
   

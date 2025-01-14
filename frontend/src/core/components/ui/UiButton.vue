@@ -66,6 +66,8 @@ const bgC = computed(() => {
     border: 1px solid black;
 }
 .list-item {
+    font-family: 'FZKai-Z03';
+    font-size: var(--medium);
     background-color: var(--white);
 }
 .exit {

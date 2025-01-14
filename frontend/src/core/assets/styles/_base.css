@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'FZKai-Z03';
+  src: url('../fonts/FZKai-Z03.ttf');
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: var(--body-bg-color);
+}
+p {
+  color: var(--font-color-base);
+
+}
+h1, h2, h3, h4, h5 {
+  color: var(--font-color-base);
+}
+button:disabled {
+  background-color: black;
+  cursor: auto;
+}
+button {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+input {
+  font-family: inherit;
+  background-color: transparent;
+  border: none;  
+  border-bottom: 1px solid var(--font-color-base);
+  font-size: 16px;
+  padding: 10px;
+  width: 160px;
+}
+input:focus {
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; 
+}
+input[type=radio], input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+input[type=radio]:hover, input[type=checkbox]:hover {
+  cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: var(--font-color-base);
+}
+a:focus {
+    
+}
+body::-webkit-scrollbar {
+  background-color: rgba(22, 193, 17, 0.15);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 8px;
+  background: rgba(58, 55, 90, 0.15);
+  border-radius: 5px;
+}
+label {
+  color: var(--font-color-base);
+}
+li {
+  color: var(--font-color-base);
+  list-style: none;
+}
+ul {
+  padding: 0;
+}
+label {
+  font-size: 16px;
+}
+td {
+  font-size: 18px;
+}
+ul {
+  margin: 0;
+}
+button {
+  color: var(--font-color-base);
+}
+input {
+  color: var(--font-color-base);
+}

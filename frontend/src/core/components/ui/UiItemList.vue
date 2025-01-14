@@ -1,5 +1,5 @@
 <template>
-        <li 
+        <li
             @mouseover="changeAdvice(props.word)" 
             @mouseleave="changeAdvice(null)" 
             class="item-list"> 

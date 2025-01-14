@@ -26,3 +26,7 @@ export enum Visibility {
     hidden = 'hidden',
     visible = 'visible',
 }
+export enum Font {
+    FZKaiZ03 = 'FZKaiZ03',
+    noto = 'noto',
+}

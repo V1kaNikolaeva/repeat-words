@@ -1,6 +1,7 @@
 import { ref, type Ref } from 'vue'
 import { defineStore } from 'pinia'
 import type { Word } from '@/types/interfaces'
+import { Font } from '@/types/enums'
 
 export const useSettingsStore = defineStore('settings', () => {
     const _level: Ref<number> = ref(1)
@@ -10,6 +11,8 @@ export const useSettingsStore = defineStore('settings', () => {
     const _word: Ref<boolean> = ref(false)
     const _pinyin: Ref<boolean> = ref(false)
     const _translate: Ref<boolean> = ref(false)
+
+    const _font: Ref<boolean> = ref(Font.noto)
 
     const lastWords: Ref<Word[]> = ref([])
 
@@ -49,6 +52,7 @@ export const useSettingsStore = defineStore('settings', () => {
     // Мои списки
     // Тест создать со списком из хск\своим списком. выбрать кол во элементов
 
+    // last words
     function addWord(newWord: Word) {
         if (!newWord) {
             return
@@ -62,5 +66,5 @@ export const useSettingsStore = defineStore('settings', () => {
         lastWords.value.unshift(newWord)
         localStorage.setItem('lastWords', JSON.stringify(lastWords.value))
     }
-    return { _level, _word, _pinyin, _translate, lastWords, init, setLevel, setParts, addWord }
+    return { _level, _word, _pinyin, _translate, _font, lastWords, init, setLevel, setParts, addWord }
 })
